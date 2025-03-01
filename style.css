@@ -22,25 +22,8 @@
     transition: width 0.1s ease-out;
 }
 
-
-@keyframes background-col {
-    0% {
-        background-color: rgb(61, 61, 61);
-    }
-
-    50% {
-        background-color: rgb(52, 52, 52);
-    }
-
-    100% {
-        background-color: rgb(61, 61, 61);
-    }
-}
-
 body {
     background-color: rgb(61, 61, 61);
-    animation-name: background-col;
-    animation-duration: 2s;
 }
 
 @keyframes starting {
@@ -301,4 +284,75 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Dark Mode Button */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #666;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .site-wrapper {
+    background-color: #222;
+}
+
+.dark-mode .border {
+    background-color: #333;
+    border-left: solid #3a3a3a;
+    border-right: solid #3a3a3a;
+}
+
+.dark-mode .headline p {
+    color: white;
+    border-bottom: solid #fff 5px;
+}
+
+.dark-mode .content p {
+    color: white;
+}
+
+.dark-mode .dev p,
+.dark-mode .dev a,
+.dark-mode .social p,
+.dark-mode .social a {
+    color: #bbb;
+}
+
+.dark-mode .nav-links a {
+    color: #bbb;
+}
+
+.dark-mode .nav-links a:hover {
+    color: #4ecf7f;
+}
+
+/* Anpassung für Bilder */
+.dark-mode .image-crop {
+    background-color: #555;
+}
+
+.dark-mode .scroll-up {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .scroll-up:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
