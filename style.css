@@ -227,7 +227,7 @@ body {
 .img-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 15px;
     margin: 10px 5%;
 }
